@@ -285,6 +285,9 @@
                 app:layout_constraintVertical_bias="0.533"
                 app:srcCompat="@drawable/add_icon"
                 tools:srcCompat="@android:drawable/ic_menu_add" />
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -309,11 +312,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="72dp"
                 android:layout_marginEnd="12dp"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -336,7 +339,7 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/upapp1"
+                                android:id="@+id/service_picture"
                                 android:layout_width="141dp"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
@@ -355,7 +358,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/textVie667w9"
+                                    android:id="@+id/service_txt"
                                     android:layout_width="88dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="12dp"
@@ -368,7 +371,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/text54View9"
+                                    android:id="@+id/service_value"
                                     android:layout_width="88dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="12dp"
@@ -389,27 +392,41 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/text854View9"
+                                    android:id="@+id/date_time_txt"
                                     android:layout_width="88dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="12dp"
                                     android:layout_marginTop="3dp"
                                     android:gravity="start"
-                                    android:text="Date:"
+                                    android:text="Date - Time:"
                                     android:textAlignment="textStart"
                                     android:textColor="#000000"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/text177View9"
+                                    android:id="@+id/date_value"
                                     android:layout_width="88dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="12dp"
                                     android:layout_marginTop="3dp"
                                     android:layout_weight="1"
                                     android:gravity="start"
-                                    android:text="25/5/2024   2:30"
+                                    android:text="25/5/2024"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#A56675"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/time_value"
+                                    android:layout_width="88dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_weight="1"
+                                    android:gravity="start"
+                                    android:text="2:30"
                                     android:textAlignment="textStart"
                                     android:textColor="#A56675"
                                     android:textSize="12sp"
@@ -422,7 +439,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/wwtextView9"
+                                    android:id="@+id/price_value"
                                     android:layout_width="88dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="12dp"
@@ -461,7 +478,7 @@
                                 tools:layout_marginBottom="9dp">
 
                                 <ImageView
-                                    android:id="@+id/image87hView18"
+                                    android:id="@+id/close_picture"
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     tools:srcCompat="@drawable/close" />
@@ -475,7 +492,7 @@
                                 tools:layout_marginBottom="9dp">
 
                                 <ImageView
-                                    android:id="@+id/image09View18"
+                                    android:id="@+id/pencil_picture"
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     tools:srcCompat="@drawable/pencil" />
@@ -487,363 +504,16 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="12dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="3dp">
 
 
-                    <LinearLayout
-                        android:layout_width="368dp"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/upapp552"
-                                android:layout_width="141dp"
-                                android:layout_height="match_parent"
-
-                                android:scaleType="centerCrop"
-                                tools:srcCompat="@drawable/haircut2" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/text3222View9"
-                                    android:layout_width="88dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="12dp"
-                                    android:layout_marginTop="15dp"
-                                    android:gravity="start"
-                                    android:text="Service:"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/text646View9"
-                                    android:layout_width="88dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="12dp"
-                                    android:layout_marginTop="3dp"
-                                    android:layout_weight="1"
-                                    android:gravity="start"
-                                    android:text="Haircut"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#A56675"
-                                    android:textSize="12sp"
-                                    android:textStyle="normal" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/textVi75ew9"
-                                    android:layout_width="88dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="12dp"
-                                    android:layout_marginTop="3dp"
-                                    android:gravity="start"
-                                    android:text="Date:"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/te63xtView9"
-                                    android:layout_width="88dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="12dp"
-                                    android:layout_marginTop="3dp"
-                                    android:layout_weight="1"
-                                    android:gravity="start"
-                                    android:text="01/6/2024   5:45"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#A56675"
-                                    android:textSize="12sp"
-                                    android:textStyle="normal" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/textViwewew9"
-                                    android:layout_width="88dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="12dp"
-                                    android:layout_marginTop="3dp"
-                                    android:gravity="start"
-                                    android:text="150 $"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#375B20"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="98dp"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="9dp"
-                                android:orientation="vertical"
-                                tools:layout_marginBottom="9dp">
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="5dp"
-                                android:orientation="vertical"
-                                tools:layout_marginBottom="9dp">
-
-                                <ImageView
-                                    android:id="@+id/image98View18"
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    tools:srcCompat="@drawable/close" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="5dp"
-                                android:orientation="vertical"
-                                tools:layout_marginBottom="9dp">
-
-                                <ImageView
-                                    android:id="@+id/image999View18"
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    tools:srcCompat="@drawable/pencil" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:layout_marginTop="12dp"
-                        android:layout_weight="1"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="3dp">
-
-
-                        <LinearLayout
-                            android:layout_width="368dp"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:id="@+id/prevap22p"
-                                    android:layout_width="141dp"
-                                    android:layout_height="match_parent"
-
-                                    android:scaleType="centerCrop"
-                                    tools:srcCompat="@drawable/mup" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/textView9211"
-                                        android:layout_width="88dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="12dp"
-                                        android:layout_marginTop="15dp"
-                                        android:gravity="start"
-                                        android:text="Service:"
-                                        android:textAlignment="textStart"
-                                        android:textColor="#000000"
-                                        android:textSize="14sp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/textVie8771w9"
-                                        android:layout_width="88dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="12dp"
-                                        android:layout_marginTop="3dp"
-                                        android:layout_weight="1"
-                                        android:gravity="start"
-                                        android:text="Makeup"
-                                        android:textAlignment="textStart"
-                                        android:textColor="#A56675"
-                                        android:textSize="12sp"
-                                        android:textStyle="normal" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/textView5hh9"
-                                        android:layout_width="88dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="12dp"
-                                        android:layout_marginTop="3dp"
-                                        android:gravity="start"
-                                        android:text="Date:"
-                                        android:textAlignment="textStart"
-                                        android:textColor="#000000"
-                                        android:textSize="14sp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/textVi2hsew9"
-                                        android:layout_width="88dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="12dp"
-                                        android:layout_marginTop="3dp"
-                                        android:layout_weight="1"
-                                        android:gravity="start"
-                                        android:text="01/6/2024 10:20"
-                                        android:textAlignment="textStart"
-                                        android:textColor="#A56675"
-                                        android:textSize="12sp"
-                                        android:textStyle="normal" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/textVi88hew9"
-                                        android:layout_width="88dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="12dp"
-                                        android:layout_marginTop="3dp"
-                                        android:gravity="start"
-                                        android:text="250 $"
-                                        android:textAlignment="textStart"
-                                        android:textColor="#375B20"
-                                        android:textSize="14sp"
-                                        android:textStyle="bold" />
-
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="98dp"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    android:layout_marginTop="9dp"
-                                    android:orientation="vertical"
-                                    tools:layout_marginBottom="9dp" />
-
-                                <LinearLayout
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical"
-                                    tools:layout_marginBottom="9dp">
-
-                                    <ImageView
-                                        android:id="@+id/imageView188"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        tools:srcCompat="@drawable/close" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    android:layout_marginTop="5dp"
-                                    android:orientation="vertical"
-                                    tools:layout_marginBottom="9dp">
-
-                                    <ImageView
-                                        android:id="@+id/imageView18"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        tools:srcCompat="@drawable/pencil" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="339dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="0dp"
             android:gravity="bottom|center"
