@@ -305,31 +305,15 @@
                 app:layout_constraintVertical_bias="0.0"
                 tools:srcCompat="@drawable/img_1" />
 
-            <TextView
-                android:id="@+id/titleupcomin14g"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="40dp"
-                android:layout_weight="1"
-                android:text="Upcoming"
-                android:textColor="#A56675"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView15" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="72dp"
+                android:layout_marginTop="52dp"
                 android:layout_marginEnd="12dp"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -354,7 +338,7 @@
                             <ImageView
                                 android:id="@+id/upapp1"
                                 android:layout_width="141dp"
-                                android:layout_height="122dp"
+                                android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
                                 tools:srcCompat="@drawable/nailsoffer" />
 
@@ -425,7 +409,7 @@
                                     android:layout_marginTop="3dp"
                                     android:layout_weight="1"
                                     android:gravity="start"
-                                    android:text="25/5/2024"
+                                    android:text="25/5/2024   2:30"
                                     android:textAlignment="textStart"
                                     android:textColor="#A56675"
                                     android:textSize="12sp"
@@ -467,12 +451,20 @@
                                 android:orientation="vertical"
                                 tools:layout_marginBottom="9dp">
 
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                tools:layout_marginBottom="9dp">
+
                                 <ImageView
                                     android:id="@+id/image87hView18"
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     tools:srcCompat="@drawable/close" />
-
                             </LinearLayout>
 
                             <LinearLayout
@@ -487,22 +479,6 @@
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     tools:srcCompat="@drawable/pencil" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="5dp"
-                                android:orientation="vertical"
-                                tools:layout_marginBottom="9dp">
-
-                                <ImageView
-                                    android:id="@+id/image277View18"
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    tools:srcCompat="@drawable/preview" />
-
                             </LinearLayout>
 
                         </LinearLayout>
@@ -605,7 +581,7 @@
                                     android:layout_marginTop="3dp"
                                     android:layout_weight="1"
                                     android:gravity="start"
-                                    android:text="01/6/2024"
+                                    android:text="01/6/2024   5:45"
                                     android:textAlignment="textStart"
                                     android:textColor="#A56675"
                                     android:textSize="12sp"
@@ -647,12 +623,20 @@
                                 android:orientation="vertical"
                                 tools:layout_marginBottom="9dp">
 
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                tools:layout_marginBottom="9dp">
+
                                 <ImageView
                                     android:id="@+id/image98View18"
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     tools:srcCompat="@drawable/close" />
-
                             </LinearLayout>
 
                             <LinearLayout
@@ -667,22 +651,6 @@
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     tools:srcCompat="@drawable/pencil" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="5dp"
-                                android:orientation="vertical"
-                                tools:layout_marginBottom="9dp">
-
-                                <ImageView
-                                    android:id="@+id/i233mageView18"
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    tools:srcCompat="@drawable/preview" />
-
                             </LinearLayout>
 
                         </LinearLayout>
@@ -695,21 +663,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/titleupcomin22g"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_weight="1"
-                        android:text="Previous "
-                        android:textColor="#A56675"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/imageView15" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -806,7 +759,7 @@
                                         android:layout_marginTop="3dp"
                                         android:layout_weight="1"
                                         android:gravity="start"
-                                        android:text="01/6/2024"
+                                        android:text="01/6/2024 10:20"
                                         android:textAlignment="textStart"
                                         android:textColor="#A56675"
                                         android:textSize="12sp"
@@ -856,10 +809,10 @@
                                     tools:layout_marginBottom="9dp">
 
                                     <ImageView
-                                        android:id="@+id/imageView18"
+                                        android:id="@+id/imageView188"
                                         android:layout_width="20dp"
                                         android:layout_height="20dp"
-                                        tools:srcCompat="@drawable/preview" />
+                                        tools:srcCompat="@drawable/close" />
 
                                 </LinearLayout>
 
@@ -868,7 +821,14 @@
                                     android:layout_height="20dp"
                                     android:layout_marginTop="5dp"
                                     android:orientation="vertical"
-                                    tools:layout_marginBottom="9dp" />
+                                    tools:layout_marginBottom="9dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView18"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        tools:srcCompat="@drawable/pencil" />
+                                </LinearLayout>
 
                             </LinearLayout>
 

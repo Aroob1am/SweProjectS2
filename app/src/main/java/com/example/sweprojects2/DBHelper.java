@@ -1,5 +1,6 @@
 package com.example.sweprojects2;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -149,6 +150,7 @@ public class DBHelper extends SQLiteOpenHelper {
             db.close();
         }
     }
+    @SuppressLint("Range")
     public int getClientId(String email) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = null;
@@ -158,7 +160,7 @@ public class DBHelper extends SQLiteOpenHelper {
             String query = "SELECT " + ClientID + " FROM " + Client + " WHERE " + Email + "=?";
             cursor = db.rawQuery(query, new String[]{email});
 
-            if (cursor.moveToFirst()) {
+            if (cursor != null && cursor.moveToFirst()) {
                 clientId = cursor.getInt(cursor.getColumnIndex(ClientID));
             }
 
@@ -171,5 +173,15 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    Cursor readAllData(){
+     String query = "SELECT * FROM " + Appointment;
+     SQLiteDatabase db = this.getReadableDatabase();
+     Cursor cursor = null;
+     if (db != null){
+      cursor = db.rawQuery(query, null);
+
+     }
+     return cursor;
+    }
 }
 
