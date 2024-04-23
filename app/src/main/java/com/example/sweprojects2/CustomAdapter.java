@@ -36,20 +36,28 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        holder.service_value.setText(String.valueOf(ServiceName.get(position)));
+        holder.date_value.setText(String.valueOf(Date.get(position)));
+        holder.time_value.setText(String.valueOf(Time.get(position)));
+        holder.price_value.setText(String.valueOf(Price.get(position)));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return ClientID.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
+       TextView service_value, date_value, time_value, price_value;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            service_value = itemView.findViewById(R.id.service_value);
+            date_value = itemView.findViewById(R.id.date_value);
+            time_value = itemView.findViewById(R.id.time_value);
+            price_value = itemView.findViewById(R.id.price_value);
         }
     }
 

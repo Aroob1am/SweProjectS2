@@ -1,6 +1,7 @@
 package com.example.sweprojects2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.database.Cursor;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     DBHelper myDB;
     ArrayList<String> ClientID, ServiceName, Date, Time, Price;
+    CustomAdapter customAdapter;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
@@ -25,7 +27,12 @@ public class MainActivity extends AppCompatActivity {
         Date = new ArrayList<>();
         Time = new ArrayList<>();
         Price = new ArrayList<>();
+
         storeDataInArrays();
+
+        customAdapter = new CustomAdapter(MainActivity.this,ClientID, ServiceName, Date, Time, Price);
+        recyclerView.setAdapter(customAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 
     void storeDataInArrays(){

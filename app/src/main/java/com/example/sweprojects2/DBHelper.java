@@ -173,15 +173,22 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
-    Cursor readAllData(){
-     String query = "SELECT * FROM " + Appointment;
-     SQLiteDatabase db = this.getReadableDatabase();
-     Cursor cursor = null;
-     if (db != null){
-      cursor = db.rawQuery(query, null);
+    Cursor readAllData() {
+        String query = "SELECT " + Service + "." + ServiceName + ", " +
+                Service + "." + Price + ", " +
+                Appointment + "." + Date + ", " +
+                Appointment + "." + Time +
+                " FROM " + Appointment +
+                " INNER JOIN " + Service +
+                " ON " + Appointment + "." + ServiceID + " = " + Service + "." + ServiceID;
 
-     }
-     return cursor;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = null;
+        if (db != null) {
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
     }
+
 }
 
